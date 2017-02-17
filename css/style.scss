@@ -1,0 +1,111 @@
+@import "compass";
+@import url('https://fonts.googleapis.com/css?family=Pangolin');
+//font family
+$baseFontFamily :"游ゴシック", YuGothic, "メイリオ",Verdana, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+
+//colors
+$baseColor: #87cefa;
+$subColor: #ffffe0;
+$fontColor: #24140e;
+
+/* Base
+------------------------------------------------------------*/
+html{ font-size: 80%; }
+
+.block-center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+/*main---------------------------*/
+.body {
+  color: $fontColor;
+  font-size: 1.4rem;
+  font-family:$baseFontFamily;
+  line-height:1.6;
+  letter-spacing: 0.1em;
+}
+.top-picture {
+  @extend .block-center;
+  height: auto;
+  max-width: 100%;
+  max-height: 250px;
+}
+#films {
+  padding: 10px 0;
+  width: 100%;
+  height: 100%;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.text-center {
+  font-family: $baseFontFamily;
+  color: $fontColor;
+  text-align: center;
+  }
+.title {
+  font-family: $baseFontFamily;
+  color: $fontColor;
+  text-align: center;
+  background-color: $baseColor;
+  padding: 10px;
+}
+.story {
+  font-family: $baseFontFamily;
+  color: $fontColor;
+  padding: 10px;
+  text-align: left;
+}
+.film-box {
+  @extend .block-center;
+  background-color: $subColor;
+  width: 90%;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+#contact {
+  padding: 10px 0;
+  width: 100%;
+  height: 100%;
+  background-color: $baseColor;
+}
+.button {
+  @extend .block-center;
+  font-family: $baseFontFamily;
+  text-align: center;
+  border-radius: 4px;
+  background-color: white;
+  width: 100px;
+  margin-top: 5px;
+  padding:5px;
+}
+
+//desktop
+@media (min-width: 769px) {
+  .top-piture {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 500px;
+  }
+  .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .film-box {
+   margin: 10px;
+    
+  }
+  .button {
+    :hover {
+      backgournd-color: darken($baseColor, 10%);
+    }
+  }
+}
