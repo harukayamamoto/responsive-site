@@ -5,10 +5,11 @@
 html {
   font-size: 80%; }
 
-.block-center, .top-picture, .film-box, .button {
+.block-center, .film-box, .button {
   display: block;
   margin-left: auto;
   margin-right: auto; }
+
 
 /*main---------------------------*/
 .body {
@@ -18,11 +19,13 @@ html {
   line-height: 1.6;
   letter-spacing: 0.1em; }
 
-.top-picture {
-  height: auto;
-  max-width: 100%;
-  max-height: 250px; }
-
+  .top_picture {
+  background-image: url(../images/img_stockholm.jpg);
+  height: 250px;
+  width: 100%;
+  background-size: cover;
+  background-position: center center; }
+  
 #films {
   padding: 10px 0;
   width: 100%;
@@ -74,13 +77,12 @@ html {
   padding: 5px; }
 
 @media (min-width: 769px) {
-  .top-piture {
-    display: block;
-    margin-right: auto;
-    margin-left: auto;
-    height: auto;
-    max-width: 100%;
-    max-height: 500px; }
+  .top_picture {
+    background-image: url(../images/img_stockholm.jpg);
+    height: 500px;
+    width: 100%;
+    background-size: cover;
+    background-position: center center; }
 
   .container {
     display: flex;
